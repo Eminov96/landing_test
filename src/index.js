@@ -9,6 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from './components/App';
 import IndexSaga from "./middleware/saga/indexSaga";
+import './reset.css'
 
 const sagaMiddleware = createSagaMiddleware();
 
