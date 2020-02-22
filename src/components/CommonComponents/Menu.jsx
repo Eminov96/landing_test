@@ -1,5 +1,4 @@
 import React from 'react';
-import './common.scss';
 
 function Menu({list, listClass, tabClass}) {
 
@@ -8,7 +7,7 @@ function Menu({list, listClass, tabClass}) {
     return (
         <ul className={listClass}>
             {list.map((value, index)=>
-                <li onClick={handleChange} key={index}>{value}</li>)
+                <li onClick={handleChange} className={`${tabClass}`} key={index}>{value}</li>)
             }
         </ul>
     );

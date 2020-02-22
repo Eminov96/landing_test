@@ -1,9 +1,11 @@
 import React from 'react';
 
+import HeaderImage from '../../images/Header Image.jpg'
 
-function Slider() {
+function Slider({sliderClassName}) {
     return (
-        <div>
+        <div className={sliderClassName}>
+            <img src={HeaderImage} alt=""/>
         </div>
     );
 }

@@ -1,0 +1,47 @@
+.header{
+  display: flex;
+  .header-information{
+    padding-left: 161px;
+    padding-top: 22px;
+  }
+  .header-slider{
+
+  }
+}
+
+
+.header-menu{
+  display: flex;
+  align-items: center;
+  .header-logo{
+    max-width: 95px;
+    margin-right: 71px;
+  }
+
+  .header-list{
+    display: flex;
+    justify-content: space-between;
+    min-width: 570px;
+    margin-right: 73px;
+    .header-tab{
+      //font-family: Chivo;
+      font-size: 16px;
+      line-height: 19px;
+      cursor: pointer;
+      &:first-child{
+        color: #13AA57;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::after{
+          content: "";
+          height: 6px;
+          width: 6px;
+          background-color: #13AA57;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
