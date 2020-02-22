@@ -26,19 +26,19 @@
       font-size: 16px;
       line-height: 19px;
       cursor: pointer;
-      &:first-child{
-        color: #13AA57;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &::after{
-          content: "";
-          height: 6px;
-          width: 6px;
-          background-color: #13AA57;
-          border-radius: 50%;
-          display: inline-block;
-        }
+    }
+    .current-tab{
+      color: #13AA57;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &::after{
+        content: "";
+        height: 6px;
+        width: 6px;
+        background-color: #13AA57;
+        border-radius: 50%;
+        display: inline-block;
       }
     }
   }
