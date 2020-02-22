@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function Description({descriptionClassName}) {
+function Description({descriptionClassName, text}) {
     return (
-        <p>{descriptionClassName}</p>
+        <p className={descriptionClassName}>{text}</p>
     );
 }
 

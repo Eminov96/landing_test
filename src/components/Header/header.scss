@@ -1,18 +1,16 @@
 .header{
   display: flex;
   .header-information{
-    padding-left: 161px;
     padding-top: 22px;
   }
   .header-slider{
 
   }
 }
-
-
 .header-menu{
   display: flex;
   align-items: center;
+  padding-left: 161px;
   .header-logo{
     max-width: 95px;
     margin-right: 71px;
@@ -23,8 +21,8 @@
     justify-content: space-between;
     min-width: 570px;
     margin-right: 73px;
+    font-family: 'Chivo-Regular', sans-serif;
     .header-tab{
-      //font-family: Chivo;
       font-size: 16px;
       line-height: 19px;
       cursor: pointer;
@@ -44,4 +42,43 @@
       }
     }
   }
+}
+
+.header-information .header-content{
+  margin-left: 255px;
+  margin-top: 233px;
+  max-width: 470px;
+  &-title{
+    font-family: 'Chivo-Regular', sans-serif;
+    font-size: 46px;
+    line-height: 64px;
+    margin-bottom: 26px;
+  }
+  &-description{
+    font-family: 'Chivo-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 58px;
+    color: #263238;
+  }
+  &-btn{
+    width: 240px; // max-width
+    height: 80px; // max-height
+    box-shadow: 0 21.6667px 33.3333px rgba(19, 170, 87, 0.3);
+    background-color: #13AA57;
+    color: white;
+    border-radius: inherit;
+    text-transform: none;
+    font-family: 'Chivo-Regular', sans-serif;
+    font-size: 30px;
+    line-height: 53px;
+    margin-right: 38px;
+    &:hover{
+      color: black;
+    }
+  }
+}
+.wrapper-btn-socialNetwork{
+  display: flex;
+  align-items: center;
 }

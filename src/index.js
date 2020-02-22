@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from './components/App';
 import IndexSaga from "./middleware/saga/indexSaga";
 import './reset.css'
-
+import './fonts/Chivo/Chivo.css'
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(rootReducer,composeWithDevTools(

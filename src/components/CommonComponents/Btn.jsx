@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 
 function Btn({variant, text, btnClassName}) {
     return (
-        <Button variant={variant}>{text}</Button>
+        <Button className={btnClassName} variant={variant}>{text}</Button>
     );
 }
 
