@@ -1,10 +1,11 @@
 .header{
   display: flex;
   .header-information{
+    width: 54%;
     padding-top: 22px;
   }
   .header-slider{
-    width: 100%;
+    width: 50%;
     position: relative;
   }
   .header-managingSlide{
@@ -13,7 +14,7 @@
     background-color: #13AA57;
     color: white;
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     z-index: 1;
   }
 }

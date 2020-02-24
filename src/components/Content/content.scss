@@ -1,0 +1,49 @@
+.content-wrapper-image{
+  max-width: 989px;
+  .content-about-image{
+    width: 100%;
+  }
+}
+
+.aboutInfoMessage{
+  font-family: 'Chivo-Regular', sans-serif;
+  position: absolute;
+  top: 141px;
+  left: 720px;
+  padding: 64px 114px 64px 68px;
+  margin-right: 160px;
+  background-color: white;
+  box-shadow: -1px 12px 23px rgba(0, 0, 0, 0.107654);
+  .content-about-btn {
+    color: #13AA57;
+    border-color: #13AA57;
+    border-radius: 0;
+    text-transform: initial;
+    padding: 8.5px 27px;
+  }
+}
+
+.content-about {
+  position: relative;
+
+  &-link-title {
+    font-size: 15px;
+    line-height: 21px;
+    color: #13AA57;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    cursor: pointer;
+  }
+  &-title {
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &-description{
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #263238;
+  }
+}
