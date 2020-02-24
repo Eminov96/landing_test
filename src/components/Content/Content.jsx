@@ -7,8 +7,9 @@ import Btn from "../CommonComponents/Btn";
 
 import "./content.scss";
 import {Link} from "react-router-dom";
+import Icon from "../CommonComponents/Icon";
 
-function Content({aboutImage}) {
+function Content({aboutImage, offer}) {
     return(
         <div className="content">
             <div className={'content-about'}>
@@ -27,12 +28,28 @@ function Content({aboutImage}) {
                     <Btn text={'Check our blog'} variant={'outlined'} btnClassName={'content-about-btn'}/>
                 </div>
             </div>
+            <div className={'content-offer'}>
+                <div className={'content-offer-info'}>
+                    <Title titleClassName={'content-offer-title'} text={'What we offer'}/>
+                    {offer && offer.map((info)=>
+                        <div>
+                            <div>
+                                <Icon iconHref={info['icon']}/>
+                                <Title text={info['title']}/>
+                            </div>
+                            <Description />
+                        </div>
+                    )}
+                </div>
+                <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-offer-image'} imgSrc={''}/>
+            </div>
         </div>
     );
 }
 
 const mapStateToProps = (store) => ({
     aboutImage:store.mainPage.aboutImage,
+    offer:store.mainPage.offer,
 });
 
 
