@@ -3,3 +3,37 @@
 }
 
 
+
+.header-slider .carousel{
+  &-next {
+    width: 33px;
+    height: 33px;
+    right: 87%;
+    top: 94.5%;
+    // background-image: url("../../images/Right.png");
+
+    &::before {
+      width: auto;
+      height: auto;
+      background-image: none;
+      content: url("../../images/Right.png");
+    }
+  }
+  &-prev{
+    width: 33px;
+    height: 33px;
+    top: 94.5%;
+    padding-left: 26px;
+   // background-image: url("../../images/Left.png");
+
+    &::before{
+      width: auto;
+      height: auto;
+      background-image: none;
+      content: url("../../images/Left.png");
+    }
+  }
+}
+.carouselImage{
+  width: 100%;
+}

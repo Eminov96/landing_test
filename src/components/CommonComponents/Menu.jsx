@@ -9,7 +9,6 @@ function Menu({list, listClass, tabClass, currentHeaderTab, currentTab}) {
         currentHeaderTab(target.innerHTML);
     };
 
-    console.log(currentTab);
     return (
         <ul className={listClass}>
             {list.map((value, index)=>

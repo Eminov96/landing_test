@@ -4,7 +4,17 @@
     padding-top: 22px;
   }
   .header-slider{
-
+    width: 100%;
+    position: relative;
+  }
+  .header-managingSlide{
+    width: 200px;
+    height: 66px;
+    background-color: #13AA57;
+    color: white;
+    position: absolute;
+    bottom: 3px;
+    z-index: 1;
   }
 }
 .header-menu{

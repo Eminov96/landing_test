@@ -4,7 +4,7 @@ import Menu from "../CommonComponents/Menu";
 import Title from "../CommonComponents/Title";
 import Description from "../CommonComponents/Description";
 import Btn from "../CommonComponents/Btn";
-import Slider from "../CommonComponents/Slider";
+import Carousel from "../CommonComponents/Carousel";
 import Icon from "../CommonComponents/Icon";
 
 import HeaderLogo from "../../images/Logo.png";
@@ -13,7 +13,6 @@ import Instagram from "../../images/instagram.svg";
 import Youtube from "../../images/youtube.svg";
 
 import "./header.scss";
-import '../CommonComponents/common.scss'
 function Header() {
     return (
         <div className="header">
@@ -35,7 +34,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <Slider sliderClassName={'header-slider'}/>
+            <Carousel sliderClassName={'header-slider'} managingSliderClassName={'header-managingSlide'}/>
         </div>
     );
 }
