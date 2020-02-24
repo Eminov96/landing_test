@@ -1,10 +1,13 @@
 .content-wrapper-image{
   max-width: 989px;
+  display: flex;
   .content-about-image{
     width: 100%;
   }
+  .content-offer-image{
+    height: 977px;
+  }
 }
-
 .aboutInfoMessage{
   font-family: 'Chivo-Regular', sans-serif;
   position: absolute;
@@ -22,7 +25,6 @@
     padding: 8.5px 27px;
   }
 }
-
 .content-about {
   position: relative;
 
@@ -45,5 +47,117 @@
     font-size: 18px;
     line-height: 29px;
     color: #263238;
+  }
+}
+.content-offer .content-offer-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 44%;
+  width: 240px;
+  height: 80px;
+  box-shadow: 0 21.6667px 33.3333px rgba(19, 170, 87, 0.3);
+  background-color: #13AA57;
+  color: white;
+  border-radius: inherit;
+  text-transform: none;
+  font-family: 'Chivo-Regular', sans-serif;
+  font-size: 30px;
+  line-height: 53px;
+  &:hover{
+    color: black;
+  }
+}
+.content-offer{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  &-info{
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: 45% 45%;
+    width: 46.1%;
+    padding: 60px 0 0 112px;
+  }
+  &-image{
+    width: 100%;
+  }
+  &-title{
+    margin: 0 auto;
+    font-family: 'Chivo-light', sans-serif;
+    font-size: 49px;
+    line-height: 54px;
+    text-transform: uppercase;
+    grid-column: 1/3;
+  }
+  &-wrapper-title{
+    display: flex;
+    align-items: center;
+    span{
+      border-left: 3px solid;
+      position: absolute;
+      &.first{
+        height: 80px;
+        top: 25px;
+        left: 57px;
+      }
+      &.second{
+        height: 70px;
+        top: 160px;
+        left: 57px;
+      }
+    }
+  }
+  &-infoBlock.last{
+    border-bottom: 4px solid #13AA57;
+  }
+  &-infoBlock{
+    font-size: 20px;
+    line-height: 26px;
+    color: #263238;
+    padding-left: 40px;
+    &:last-child{
+      grid-column: 1/3;
+      width: 911px;
+      z-index: 1;
+      background-color: white;
+      box-shadow: -1px 12px 23px rgba(0, 0, 0, 0.107654);
+      padding: 19px 47px 0 47px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    &-icon.last{
+      img{
+        width: 100%;
+      }
+      z-index: 2;
+      position: absolute;
+      top: 45%;
+      left: 4.5%;
+    }
+    &-description.last{
+      margin-left: 10px;
+      margin-bottom: 25px;
+      border-left: 0;
+    }
+    &-title.last{
+      padding-left: 48px;
+    }
+    &-icon{
+      width: 35px;
+      height: 35px;
+    }
+    &-title{
+      font-family: 'Chivo-Bold', sans-serif;
+      font-weight: bold;
+      padding-left: 16px;
+    }
+    &-description{
+      font-family: 'Chivo-light', sans-serif;
+      font-weight: lighter;
+      padding: 20px 0 0 36px;
+      border-left: 3px solid #263238;
+      margin: 10px 0 0 15px;
+    }
   }
 }

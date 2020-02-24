@@ -4,12 +4,10 @@ import Description from "../CommonComponents/Description";
 import Title from "../CommonComponents/Title";
 import Image from "../CommonComponents/Image";
 import Btn from "../CommonComponents/Btn";
-
-import "./content.scss";
-import {Link} from "react-router-dom";
 import Icon from "../CommonComponents/Icon";
+import "./content.scss";
 
-function Content({aboutImage, offer}) {
+function Content({aboutImage, offer, offerImage}) {
     return(
         <div className="content">
             <div className={'content-about'}>
@@ -29,19 +27,25 @@ function Content({aboutImage, offer}) {
                 </div>
             </div>
             <div className={'content-offer'}>
+                <div>
+
+                </div>
                 <div className={'content-offer-info'}>
                     <Title titleClassName={'content-offer-title'} text={'What we offer'}/>
                     {offer && offer.map((info)=>
-                        <div>
-                            <div>
-                                <Icon iconHref={info['icon']}/>
-                                <Title text={info['title']}/>
+                        <div className={`content-offer-infoBlock ${info['key'] && 'last'}`}>
+                            <div className={`content-offer-wrapper-title ${info['key'] && 'last'}`}>
+                                {info['key'] && <span className={'first'}></span>}
+                                <Icon image={info['icon']} iconClassName={`content-offer-infoBlock-icon ${info['key'] && 'last'}`}/>
+                                {info['key'] && <span className={'second'}></span>}
+                                <Title text={info['title']} titleClassName={`content-offer-infoBlock-title ${info['key'] && 'last'}`}/>
                             </div>
-                            <Description />
+                            <Description text={info['description']} descriptionClassName={`content-offer-infoBlock-description ${info['key'] && 'last'}`}/>
                         </div>
                     )}
                 </div>
-                <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-offer-image'} imgSrc={''}/>
+                <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-offer-image'} imgSrc={offerImage}/>
+                <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Contact us'}/>
             </div>
         </div>
     );
@@ -50,6 +54,7 @@ function Content({aboutImage, offer}) {
 const mapStateToProps = (store) => ({
     aboutImage:store.mainPage.aboutImage,
     offer:store.mainPage.offer,
+    offerImage:store.mainPage.offerImage
 });
 
 

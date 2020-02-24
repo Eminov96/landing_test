@@ -1,5 +1,5 @@
 
-import {SET_CURRENT_HEADER_TAB, SET_CURRENT_SLIDE, SET_ABOUT_IMAGE} from "../constants/constantsMainPage";
+import {SET_CURRENT_HEADER_TAB, SET_CURRENT_SLIDE, SET_ABOUT_IMAGE, SET_OFFER_IMAGE} from "../constants/constantsMainPage";
 
 import HeaderImage from '../images/Header Image.jpg';
 import SliderPhoto1 from '../images/sliderPhoto1.jpg';
@@ -9,7 +9,8 @@ import Camera from  '../images/camera-photo.svg';
 import Circle from  '../images/shape-circle.svg';
 import TapHand from  '../images/tap-hand.svg';
 import Video from  '../images/video-camera.svg';
-
+import Laugh from  '../images/laugh.svg';
+import OfferImage from '../images/What we offer image.jpg'
 
 const initialState = {
     currentTab: 'Home',
@@ -20,8 +21,16 @@ const initialState = {
         {icon: Camera, title: 'Modern Photo and Video', description: 'We offer high-quality video and photo in order  to capture every detail of your  perfect wedding day.'},
         {icon: Circle, title: 'Air-drone photography', description: 'Have you ever dreamed of having a breathtaking movi-like video? Our professional photographers are highly skilled in using air-drones'},
         {icon: TapHand, title: 'Professional retoushing', description: 'Our team provides you with brilliant photo editing in really short terms. You\'ll get the amazing photos in the blink of your eye.'},
-        {icon: Video, title: 'Actual Equipment', description: 'Our main goal is to achieve the outstanding results. So we are constantly in search of new updates of our equipment.'}
+        {icon: Video, title: 'Actual Equipment', description: 'Our main goal is to achieve the outstanding results. So we are constantly in search of new updates of our equipment.'},
+        {key:'last', icon: Laugh, title: 'Travel wedding photography', description:
+                'We believe that your wedding is one of the most important days in your life, that\'s ' +
+                'why our company will do our best to make it unforgetable and peculiar. ' +
+                'Our team can organize an extraordinary ceremony for you. ' +
+                'If case you do not know exactly what you want - why don\'t you consider choosing to make your wedding ceremony outside. ' +
+                'You can choose any place you like - from the park in your city to the bank of the seaside.'}
     ],
+    offerImage: OfferImage,
+
 
 };
 export const reducerMainPage = (state = initialState, action) => {
@@ -32,6 +41,8 @@ export const reducerMainPage = (state = initialState, action) => {
             return {...state, currentSlide: action.payload};
         case SET_ABOUT_IMAGE:
             return {...state, aboutImage: action.payload};
+        case SET_OFFER_IMAGE:
+            return {...state, offerImage: action.payload};
         default:
             return state
     }

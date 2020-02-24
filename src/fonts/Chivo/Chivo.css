@@ -1,5 +1,14 @@
 @font-face {
     font-family: "Chivo-Regular";
     src: url("Chivo-Regular.ttf");
-   /*// format("opentype"),*/
+}
+
+@font-face {
+    font-family: "Chivo-light";
+    src: url("Chivo-Light.ttf");
+}
+
+@font-face {
+    font-family: "Chivo-Bold";
+    src: url("Chivo-Bold.ttf");
 }
