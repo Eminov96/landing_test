@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {connect} from "react-redux";
 import Description from "../CommonComponents/Description";
 import Title from "../CommonComponents/Title";
 import Image from "../CommonComponents/Image";
 import Btn from "../CommonComponents/Btn";
 import Icon from "../CommonComponents/Icon";
-import "./content.scss";
+import {sendMessage} from "../../actions/actionsSendingData";
+import Input from "../CommonComponents/Input";
 import Video from "../CommonComponents/Video";
 
 import Poster from "../../images/portfolio/Rectangle 9.jpg";
@@ -14,11 +15,20 @@ import Poster3 from "../../images/portfolio/Rectangle 11.jpg";
 import Poster4 from "../../images/portfolio/Rectangle 12.jpg";
 import Poster5 from "../../images/portfolio/Rectangle 13.jpg";
 import Poster6 from "../../images/portfolio/Rectangle 14.jpg";
-import Poster7 from "../../images/portfolio/Instagram.jpg";
-import Carousel from "../CommonComponents/Carousel";
 import CarouselContent from "../CommonComponents/CarouselContent";
+import "./content.scss";
 
-function Content({aboutImage, offer, offerImage}) {
+function Content({aboutImage, offer, offerImage, sendMessage}) {
+    const [dataFields, setDataFields] = useState({});
+
+    const getDataField = (value) => {
+        setDataFields({...dataFields, ...value});
+    };
+
+    const handleClick = (event) => {
+        sendMessage(dataFields);
+    };
+
     return(
         <div className="content">
             <div className={'content-about'}>
@@ -72,10 +82,16 @@ function Content({aboutImage, offer, offerImage}) {
                     {/*<Image imgSrc={Poster7} wrapperImageClassName={'poster g'} imageClassName={'posterImage'}/>*/}
                 </div>
             </div>
-
             <div className={'content-testimonials'}>
                 <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
                 <CarouselContent rows={3}/>
+            </div>
+
+            <div className={'content-feedBack'}>
+                <Input fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
+                <Input fieldName={'Your Email'} getDataField={getDataField} inputType={'email'} fieldType={'email'} title={'Email'}/>
+                <Input fieldName={'Your Massage'} getDataField={getDataField} inputType={'textarea'} fieldType={'note'} title={'Message'}/>
+                <Btn handleClick={handleClick} variant={'contained'} btnClassName={'content-feedBack-btn'} text={'submit'}/>
             </div>
         </div>
     );
@@ -87,6 +103,8 @@ const mapStateToProps = (store) => ({
     offerImage:store.mainPage.offerImage
 });
 
+const mapDispatchToProps = {
+    sendMessage
+};
 
-
-export default connect(mapStateToProps)(Content);
+export default connect(mapStateToProps, mapDispatchToProps)(Content);
