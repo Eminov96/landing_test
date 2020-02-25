@@ -1,5 +1,11 @@
 
-import {SET_CURRENT_HEADER_TAB, SET_CURRENT_SLIDE, SET_ABOUT_IMAGE, SET_OFFER_IMAGE} from "../constants/constantsMainPage";
+import {
+    SET_CURRENT_HEADER_TAB,
+    SET_CURRENT_SLIDE,
+    SET_ABOUT_IMAGE,
+    SET_OFFER_IMAGE,
+    SET_CONTENT_SLIDE
+} from "../constants/constantsMainPage";
 
 import HeaderImage from '../images/Header Image.jpg';
 import SliderPhoto1 from '../images/sliderPhoto1.jpg';
@@ -12,9 +18,15 @@ import Video from  '../images/video-camera.svg';
 import Laugh from  '../images/laugh.svg';
 import OfferImage from '../images/What we offer image.jpg'
 
+import Testimonials from '../images/testimonials/Mask Group.png'
+import Testimonials2 from '../images/testimonials/Mask Group2.png'
+import Testimonials3 from '../images/testimonials/Mask Group3.png'
+import Testimonials4 from '../images/testimonials/Mask Group3.png'
+
 const initialState = {
     currentTab: 'Home',
     currentSlide: 0,
+    currentContentSlide: 0,
     carouselHeaderImages: [HeaderImage, SliderPhoto1, SliderPhoto2],
     aboutImage: AboutImage,
     offer: [
@@ -32,6 +44,9 @@ const initialState = {
     offerImage: OfferImage,
 
 
+    carouselContentImages: [Testimonials, Testimonials2, Testimonials3, Testimonials4],
+
+
 };
 export const reducerMainPage = (state = initialState, action) => {
     switch (action.type) {
@@ -43,6 +58,8 @@ export const reducerMainPage = (state = initialState, action) => {
             return {...state, aboutImage: action.payload};
         case SET_OFFER_IMAGE:
             return {...state, offerImage: action.payload};
+        case SET_CONTENT_SLIDE:
+            return {...state, currentContentSlide: action.payload};
         default:
             return state
     }

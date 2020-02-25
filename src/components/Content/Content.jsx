@@ -6,6 +6,17 @@ import Image from "../CommonComponents/Image";
 import Btn from "../CommonComponents/Btn";
 import Icon from "../CommonComponents/Icon";
 import "./content.scss";
+import Video from "../CommonComponents/Video";
+
+import Poster from "../../images/portfolio/Rectangle 9.jpg";
+import Poster2 from "../../images/portfolio/Rectangle 10.jpg";
+import Poster3 from "../../images/portfolio/Rectangle 11.jpg";
+import Poster4 from "../../images/portfolio/Rectangle 12.jpg";
+import Poster5 from "../../images/portfolio/Rectangle 13.jpg";
+import Poster6 from "../../images/portfolio/Rectangle 14.jpg";
+import Poster7 from "../../images/portfolio/Instagram.jpg";
+import Carousel from "../CommonComponents/Carousel";
+import CarouselContent from "../CommonComponents/CarouselContent";
 
 function Content({aboutImage, offer, offerImage}) {
     return(
@@ -27,9 +38,6 @@ function Content({aboutImage, offer, offerImage}) {
                 </div>
             </div>
             <div className={'content-offer'}>
-                <div>
-
-                </div>
                 <div className={'content-offer-info'}>
                     <Title titleClassName={'content-offer-title'} text={'What we offer'}/>
                     {offer && offer.map((info)=>
@@ -46,6 +54,28 @@ function Content({aboutImage, offer, offerImage}) {
                 </div>
                 <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-offer-image'} imgSrc={offerImage}/>
                 <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Contact us'}/>
+            </div>
+            <div className={'content-portfolio'}>
+                <Title titleClassName={'content-portfolio-title'} text={'portfolio'}/>
+                <div>
+                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'All'}/>
+                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Video'}/>
+                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Photo'}/>
+                </div>
+                <div className={'content-portfolio-posters'}>
+                    <Video poster={Poster}/>
+                    <Image imgSrc={Poster2} wrapperImageClassName={'poster a'} imageClassName={'posterImage'}/>
+                    <Image imgSrc={Poster3} wrapperImageClassName={'poster b'} imageClassName={'posterImage'}/>
+                    <Image imgSrc={Poster4} wrapperImageClassName={'poster c'} imageClassName={'posterImage'}/>
+                    <Video poster={Poster5}/>
+                    <Image imgSrc={Poster6} wrapperImageClassName={'poster f'} imageClassName={'posterImage'}/>
+                    {/*<Image imgSrc={Poster7} wrapperImageClassName={'poster g'} imageClassName={'posterImage'}/>*/}
+                </div>
+            </div>
+
+            <div className={'content-testimonials'}>
+                <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
+                <CarouselContent rows={3}/>
             </div>
         </div>
     );

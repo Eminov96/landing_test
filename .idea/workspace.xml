@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/actionsMainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionsMainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/constantsMainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constantsMainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Chivo/Chivo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/fonts/Chivo/Chivo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/reducerMainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducerMainPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +38,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/CommonComponents" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/CommonComponents" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,7 +74,20 @@
       <workItem from="1582561201801" duration="1574000" />
       <workItem from="1582563094417" duration="1590000" />
       <workItem from="1582564906683" duration="1567000" />
-      <workItem from="1582568011198" duration="825000" />
+      <workItem from="1582568011198" duration="1679000" />
+      <workItem from="1582569820727" duration="934000" />
+      <workItem from="1582616516521" duration="1723000" />
+      <workItem from="1582618332191" duration="1196000" />
+      <workItem from="1582620206844" duration="1046000" />
+      <workItem from="1582622132294" duration="958000" />
+      <workItem from="1582624051782" duration="859000" />
+      <workItem from="1582625848858" duration="1584000" />
+      <workItem from="1582627864008" duration="1667000" />
+      <workItem from="1582629696674" duration="1743000" />
+      <workItem from="1582631779560" duration="1255000" />
+      <workItem from="1582633718004" duration="1545000" />
+      <workItem from="1582635562456" duration="1244000" />
+      <workItem from="1582637573144" duration="552000" />
     </task>
     <servers />
   </component>
@@ -73,9 +95,12 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1582568017225">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582637573989">
+      <screen x="0" y="23" width="1920" height="978" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582568017225" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582569823035" />
+    <state x="639" y="373" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1080@0.0.1920.1080" timestamp="1582618368326" />
+    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1582635863302" />
+    <state x="0" y="23" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.978@0.23.1920.978" timestamp="1582637573989" />
   </component>
 </project>

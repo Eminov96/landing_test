@@ -22,9 +22,15 @@
   display: flex;
   align-items: center;
   padding-left: 161px;
+  @media (max-width: 1919px) {
+    padding-left: 60px;
+  }
   .header-logo{
     max-width: 95px;
     margin-right: 71px;
+    @media (max-width: 1919px) {
+      margin-right: 50px;
+    }
   }
 
   .header-list{
@@ -33,6 +39,10 @@
     min-width: 570px;
     margin-right: 73px;
     font-family: 'Chivo-Regular', sans-serif;
+    @media (max-width: 1919px) {
+      width: 75%;
+      margin-right: 0;
+    }
     .header-tab{
       font-size: 16px;
       line-height: 19px;

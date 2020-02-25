@@ -3,7 +3,6 @@
 }
 
 
-
 .header-slider .carousel{
   &-next {
     width: 33px;
@@ -36,4 +35,103 @@
 }
 .carouselImage{
   width: 100%;
+}
+//*----*//
+.couple{
+  text-align: center;
+  &::before{
+    color: #13AA57;
+    font-size: 40px;
+    content: '“'
+  }
+}
+
+.carouselContent{
+  margin: 40px 118px 0;
+  padding-bottom: 25px;
+  .carousel{
+
+    &-next {
+      width: 33px;
+      height: 33px;
+      right: 45%;
+      top: 100%;
+
+      &::before {
+        width: auto;
+        height: auto;
+        background-image: none;
+        content: url("../../images/arrowRightContent.png");
+      }
+    }
+    &-prev{
+      width: 33px;
+      height: 33px;
+      top: 100%;
+      left: 45%;
+      padding-left: 26px;
+
+      &::before{
+        width: auto;
+        height: auto;
+        background-image: none;
+        content: url("../../images/arrowLeftContent.png");
+      }
+    }
+  }
+}
+
+.carouselContent .carousel-track .carousel-item {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-track{
+
+}
+.carouselContent{
+  position: relative;
+
+  .carousel-initialized{
+    position: initial;
+  }
+  .carousel-row{
+    background: #F7F8F3;
+    border: 1px solid #EDEDED;
+    width: 32%;
+    .carouselImageContent{
+      width: 100%;
+    }
+  }
+}
+
+
+.couple-images{
+  margin-bottom: 20px;
+}
+.couple-names{
+  font-family: 'Chivo-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.couple-date{
+  font-family: 'Chivo-light', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8E8E8E;
+}
+.couple-text{
+  font-family: 'Chivo-light', sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  color: #263238;
+  margin: 13px 35px 53px 34px;
+  text-align: justify;
+}
+.carousel-testimonials-managing{
+  font-family: 'Chivo-Regular', sans-serif;
+  font-size: 18.3566px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 3px;
 }
