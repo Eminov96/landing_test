@@ -88,10 +88,15 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
             </div>
 
             <div className={'content-feedBack'}>
-                <Input fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
-                <Input fieldName={'Your Email'} getDataField={getDataField} inputType={'email'} fieldType={'email'} title={'Email'}/>
-                <Input fieldName={'Your Massage'} getDataField={getDataField} inputType={'textarea'} fieldType={'note'} title={'Message'}/>
-                <Btn handleClick={handleClick} variant={'contained'} btnClassName={'content-feedBack-btn'} text={'submit'}/>
+                <div className={'content-feedBack-form'}>
+                    <Title titleClassName={'content-feedBack-title'} text={'SEND US MESSAGE'}/>
+
+                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
+                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Email'} getDataField={getDataField} inputType={'email'} fieldType={'email'} title={'Email'}/>
+                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Massage'} getDataField={getDataField} inputType={'textarea'} fieldType={'note'} title={'Message'}/>
+                    <Btn handleClick={handleClick} variant={'contained'} btnClassName={'content-feedBack-btn'} text={'submit'}/>
+                </div>
+
             </div>
         </div>
     );

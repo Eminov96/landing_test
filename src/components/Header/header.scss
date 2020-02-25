@@ -16,6 +16,13 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
+    span{
+      font-family: 'Chivo-Regular', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      margin-left: 26.5%;
+    }
   }
 }
 .header-menu{
