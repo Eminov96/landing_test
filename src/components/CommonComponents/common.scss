@@ -1,5 +1,8 @@
 .icon-socialNetwork{
   margin-right: 25px;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 

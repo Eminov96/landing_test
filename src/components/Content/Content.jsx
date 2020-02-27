@@ -16,6 +16,12 @@ import Poster4 from "../../images/portfolio/Rectangle 12.jpg";
 import Poster5 from "../../images/portfolio/Rectangle 13.jpg";
 import Poster6 from "../../images/portfolio/Rectangle 14.jpg";
 import CarouselContent from "../CommonComponents/CarouselContent";
+
+import Location from "../../images/contactUs/Location.svg";
+import Mail from "../../images/contactUs/mail.svg";
+import Mask from "../../images/contactUs/Mask.svg";
+import ContactUsImage from "../../images/contactUs/Rectangle 35.jpg";
+
 import "./content.scss";
 
 function Content({aboutImage, offer, offerImage, sendMessage}) {
@@ -89,14 +95,39 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
 
             <div className={'content-feedBack'}>
                 <div className={'content-feedBack-form'}>
-                    <Title titleClassName={'content-feedBack-title'} text={'SEND US MESSAGE'}/>
-
-                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
-                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Email'} getDataField={getDataField} inputType={'email'} fieldType={'email'} title={'Email'}/>
-                    <Input inputClassName={'content-feedBack-input'} fieldName={'Your Massage'} getDataField={getDataField} inputType={'textarea'} fieldType={'note'} title={'Message'}/>
+                    <Title titleClassName={'content-feedBack-form-title'} text={'SEND US MESSAGE'}/>
+                    <Input inputClassName={'content-feedBack-form-input'} fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
+                    <Input inputClassName={'content-feedBack-form-input'} fieldName={'Your Email'} getDataField={getDataField} inputType={'email'} fieldType={'email'} title={'Email'}/>
+                    <Input inputClassName={'content-feedBack-form-input'} fieldName={'Your Massage'} getDataField={getDataField} inputType={'textarea'} fieldType={'note'} title={'Message'}/>
                     <Btn handleClick={handleClick} variant={'contained'} btnClassName={'content-feedBack-btn'} text={'submit'}/>
                 </div>
 
+                <div className={'content-feedBack-contactUs'}>
+                    <Title titleClassName={'content-feedBack-title'} text={'Please contact us'}/>
+                    <Description text={'We appreciate every client and can make your dreams come true! Do not hesitate to contact us.'}
+                                 descriptionClassName={'content-feedBack-description'}/>
+                    <div className={'content-feedBack-contactInfo'}>
+                        <div className={'content-feedBack-contactInfo-wrapper'}>
+                            <Icon image={Location}
+                                  iconClassName={'content-feedBack-contactInfo-icon'}
+                                  imageIconClassName={'content-feedBack-contactInfo-imageIcon'}/>
+                            <Description descriptionClassName={'content-feedBack-contactInfo-description'} text={'385 Noah Place Suite 878'}/>
+                        </div>
+                        <div className={'content-feedBack-contactInfo-wrapper'}>
+                            <Icon image={Mask}
+                                  iconClassName={'content-feedBack-contactInfo-icon'}
+                                  imageIconClassName={'content-feedBack-contactInfo-imageIcon'}/>
+                            <Description descriptionClassName={'content-feedBack-contactInfo-description'} text={'877-255-7945'}/>
+                        </div>
+                        <div className={'content-feedBack-contactInfo-wrapper'}>
+                            <Icon image={Mail}
+                                  iconClassName={'content-feedBack-contactInfo-icon'}
+                                  imageIconClassName={'content-feedBack-contactInfo-imageIcon'}/>
+                            <Description descriptionClassName={'content-feedBack-contactInfo-description'} text={'info@form.com'}/>
+                        </div>
+                    </div>
+                </div>
+                <Image imgSrc={ContactUsImage} wrapperImageClassName={'content-feedBack-contactUsImage'} imageClassName={'image'}/>
             </div>
         </div>
     );

@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +35,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/contactUs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/components/CommonComponents" />
@@ -87,7 +93,13 @@
       <workItem from="1582639972116" duration="1710000" />
       <workItem from="1582641785054" duration="1745000" />
       <workItem from="1582643590409" duration="1552000" />
-      <workItem from="1582645401019" duration="233000" />
+      <workItem from="1582645401019" duration="1262000" />
+      <workItem from="1582647445415" duration="693000" />
+      <workItem from="1582649685043" duration="56000" />
+      <workItem from="1582800146751" duration="152000" />
+      <workItem from="1582800416070" duration="1687000" />
+      <workItem from="1582802206570" duration="2030000" />
+      <workItem from="1582804483088" duration="1748000" />
     </task>
     <servers />
   </component>
@@ -95,12 +107,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582645401304">
-      <screen x="0" y="23" width="1920" height="977" />
+    <state x="639" y="372" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582806308269">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582569823035" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582806308269" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1000@0.0.1920.1000" timestamp="1582800417617" />
     <state x="639" y="373" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1080@0.0.1920.1080" timestamp="1582618368326" />
-    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1582645401304" />
+    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1582649693743" />
     <state x="0" y="23" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.978@0.23.1920.978" timestamp="1582637573989" />
+    <state x="626" y="297" width="667" height="486" key="find.popup" timestamp="1582806174972">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="626" y="297" width="667" height="486" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582806174972" />
   </component>
 </project>
