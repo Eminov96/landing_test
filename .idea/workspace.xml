@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +97,13 @@
       <workItem from="1582800416070" duration="1687000" />
       <workItem from="1582802206570" duration="2030000" />
       <workItem from="1582804483088" duration="1748000" />
+      <workItem from="1582806310516" duration="1414000" />
+      <workItem from="1582808216626" duration="1555000" />
+      <workItem from="1582810067666" duration="1473000" />
+      <workItem from="1582811906864" duration="1564000" />
+      <workItem from="1582813875133" duration="1721000" />
+      <workItem from="1582815719542" duration="1672000" />
+      <workItem from="1582817593825" duration="1621000" />
     </task>
     <servers />
   </component>
@@ -107,17 +111,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="639" y="372" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582806308269">
+    <state x="639" y="372" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582819430448">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582806308269" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582819430448" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1000@0.0.1920.1000" timestamp="1582800417617" />
     <state x="639" y="373" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1080@0.0.1920.1080" timestamp="1582618368326" />
     <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1582649693743" />
     <state x="0" y="23" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.978@0.23.1920.978" timestamp="1582637573989" />
-    <state x="626" y="297" width="667" height="486" key="find.popup" timestamp="1582806174972">
+    <state x="626" y="297" width="667" height="486" key="find.popup" timestamp="1582817615245">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="626" y="297" width="667" height="486" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582806174972" />
+    <state x="626" y="297" width="667" height="486" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582817615245" />
   </component>
 </project>
