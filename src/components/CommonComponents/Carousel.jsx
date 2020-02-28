@@ -1,10 +1,8 @@
 import React from 'react';
-import Slider from 'infinite-react-carousel';
-
-
-import './common.scss'
-import {currentHeaderTab, setSlide} from "../../actions/actionsMainPage";
 import {connect} from "react-redux";
+import Slider from 'infinite-react-carousel';
+import {setSlide} from "../../actions/actionsMainPage";
+import './common.scss'
 
 function Carousel({sliderClassName, managingSliderClassName, setSlide, carouselImages, currentSlide}) {
 

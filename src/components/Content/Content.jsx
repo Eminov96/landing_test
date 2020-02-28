@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {connect} from "react-redux";
 import Description from "../CommonComponents/Description";
 import Title from "../CommonComponents/Title";
@@ -26,6 +26,7 @@ import "./content.scss";
 
 function Content({aboutImage, offer, offerImage, sendMessage}) {
     const [dataFields, setDataFields] = useState({});
+    const [rows, setRows] = useState('');
 
     const getDataField = (value) => {
         setDataFields({...dataFields, ...value});
@@ -90,7 +91,8 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
             </div>
             <div className={'content-testimonials'}>
                 <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
-                <CarouselContent rows={3}/>
+                <CarouselContent rows={window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2}/>
+
             </div>
 
             <div className={'content-feedBack'}>

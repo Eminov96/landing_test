@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +110,19 @@
       <workItem from="1582813875133" duration="1721000" />
       <workItem from="1582815719542" duration="1672000" />
       <workItem from="1582817593825" duration="1621000" />
+      <workItem from="1582819420737" duration="819000" />
+      <workItem from="1582875993113" duration="1575000" />
+      <workItem from="1582877790135" duration="1628000" />
+      <workItem from="1582879627091" duration="1665000" />
+      <workItem from="1582881460563" duration="1674000" />
+      <workItem from="1582884227972" duration="1522000" />
+      <workItem from="1582886079894" duration="1507000" />
+      <workItem from="1582887936079" duration="1746000" />
+      <workItem from="1582889758851" duration="1569000" />
+      <workItem from="1582891575600" duration="1673000" />
+      <workItem from="1582893419939" duration="1713000" />
+      <workItem from="1582895283428" duration="1717000" />
+      <workItem from="1582897061458" duration="961000" />
     </task>
     <servers />
   </component>
@@ -111,10 +130,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="639" y="372" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582819430448">
+    <state x="639" y="372" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1582897070631">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582819430448" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582897070631" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1000@0.0.1920.1000" timestamp="1582800417617" />
     <state x="639" y="373" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1080@0.0.1920.1080" timestamp="1582618368326" />
     <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1582649693743" />
