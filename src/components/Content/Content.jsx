@@ -15,6 +15,9 @@ import Poster3 from "../../images/portfolio/Rectangle 11.jpg";
 import Poster4 from "../../images/portfolio/Rectangle 12.jpg";
 import Poster5 from "../../images/portfolio/Rectangle 13.jpg";
 import Poster6 from "../../images/portfolio/Rectangle 14.jpg";
+import Inst from "../../images/portfolio/Instagram.jpg";
+import InstLabel from "../../images/portfolio/Mask Group.png";
+
 import CarouselContent from "../CommonComponents/CarouselContent";
 
 import Location from "../../images/contactUs/Location.svg";
@@ -26,11 +29,15 @@ import "./content.scss";
 
 function Content({aboutImage, offer, offerImage, sendMessage}) {
     const [dataFields, setDataFields] = useState({});
-    const [rows, setRows] = useState('');
+  //  const [rows, setRows] = useState('');
 
     const getDataField = (value) => {
         setDataFields({...dataFields, ...value});
     };
+    //
+    // useEffect(()=>{
+    //     setRows(window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2)
+    // });
 
     const handleClick = (event) => {
         sendMessage(dataFields);
@@ -74,25 +81,37 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
             </div>
             <div className={'content-portfolio'}>
                 <Title titleClassName={'content-portfolio-title'} text={'portfolio'}/>
-                <div>
-                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'All'}/>
-                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Video'}/>
-                    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Photo'}/>
-                </div>
+                {/*<div>*/}
+                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'All'}/>*/}
+                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Video'}/>*/}
+                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Photo'}/>*/}
+                {/*</div>*/}
                 <div className={'content-portfolio-posters'}>
-                    <Video poster={Poster}/>
-                    <Image imgSrc={Poster2} wrapperImageClassName={'poster a'} imageClassName={'posterImage'}/>
-                    <Image imgSrc={Poster3} wrapperImageClassName={'poster b'} imageClassName={'posterImage'}/>
-                    <Image imgSrc={Poster4} wrapperImageClassName={'poster c'} imageClassName={'posterImage'}/>
-                    <Video poster={Poster5}/>
-                    <Image imgSrc={Poster6} wrapperImageClassName={'poster f'} imageClassName={'posterImage'}/>
-                    {/*<Image imgSrc={Poster7} wrapperImageClassName={'poster g'} imageClassName={'posterImage'}/>*/}
+                    <div className={'content-portfolio-wrapperPoster'}>
+                        <Video poster={Poster}/>
+                        <Image imgSrc={Poster2} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                    </div>
+                    <div className={'content-portfolio-wrapperPoster'}>
+                       <Image imgSrc={Poster3} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                       <Image imgSrc={Poster4} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                    </div>
+                    <div className={'content-portfolio-wrapperPoster'}>
+                        <Video poster={Poster5}/>
+                        <Image imgSrc={Poster6} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                    </div>
+                    <div className={'content-portfolio-wrapperPoster'}>
+                        <div className={'content-portfolio-instagram'}>
+                            <Image imgSrc={InstLabel} imageClassName={'content-portfolio-instagram-image'} wrapperImageClassName={'content-portfolio-instagram-wrapImage'}/>
+                            <Description descriptionClassName={'content-portfolio-instagram-description'} text={'Follow us on Instagram'}/>
+                            <Btn text={'Go to Instagram'} btnClassName={'content-portfolio-instagram-btn'} variant={'outlined'}/>
+                        </div>
+                        <Image imgSrc={Inst} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                    </div>
                 </div>
             </div>
             <div className={'content-testimonials'}>
                 <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
                 <CarouselContent rows={window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2}/>
-
             </div>
 
             <div className={'content-feedBack'}>

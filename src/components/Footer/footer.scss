@@ -13,9 +13,13 @@
     align-items: center;
     margin-bottom: 63px;
     &-logo{
-      width: 30%;
+      @media (max-width: 425px) {
+        width: 30%;
+      }
       &-image{
-        width: 100%;
+        @media (max-width: 425px) {
+          width: 100%;
+        }
       }
     }
     &-list{
