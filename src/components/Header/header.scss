@@ -41,20 +41,27 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
-    @media (max-width: 1400px) {
-      height: 34px;
-      background-color: initial;
-    }
-    @media (max-width: 1300px) {
-      height: 45px;
+    @media (max-width: 425px) {
+      height: 60px;
+      width: 155px;
     }
     span{
       font-family: 'Chivo-Regular', sans-serif;
       font-size: 19px;
       line-height: 60px;
       margin-left: 28%;
-      @media (max-width: 1400px) {
-        line-height: 30px;
+
+      @media (max-width: 900px) {
+        display: block;
+        margin-top: 5px;
+      }
+      @media (max-width: 500px) {
+        display: block;
+        margin-top: 10px;
+      }
+      @media (max-width: 425px) {
+        margin-top: 5px;
+        margin-left: 35%;
       }
     }
   }

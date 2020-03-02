@@ -13,7 +13,6 @@ import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 
 import Youtube from "../../images/youtube.svg";
-
 import "./header.scss";
 function Header() {
     return (
@@ -33,7 +32,7 @@ function Header() {
                                                                     'unforgetable memories and amazing experience. ' +
                                                                     'We will help you to make your dreams come true!'}/>
                     <div className={'wrapper-btn-socialNetwork'}>
-                        <Btn variant={'contained'} btnClassName={'header-content-btn'} text={'Contact us'}/>
+                        <Btn link={'#contact_us'} variant={'contained'} btnClassName={'header-content-btn'} text={'Contact us'}/>
                         <div className={'header-content-icons'}>
                             <Icon image={Facebook} iconClassName={'icon-socialNetwork'} imageIconClassName={''} iconHref={'https://facebook.com'}/>
                             <Icon image={Instagram} iconClassName={'icon-socialNetwork'} imageIconClassName={''} iconHref={'https://instagram.com'}/>

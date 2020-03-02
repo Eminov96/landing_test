@@ -14,9 +14,7 @@ function Carousel({sliderClassName, managingSliderClassName, setSlide, carouselI
         <div className={sliderClassName} >
             <Slider duration={150} className={''} afterChange={changeCurrentSlide} >
                 {carouselImages && carouselImages.map((image, index)=>
-                    <div>
-                        <img className={'carouselImage'} key={index} src={image} alt=""/>
-                    </div>
+                    <img className={'carouselImage'} key={index} src={image} alt=""/>
                 )}
             </Slider>
             <div className={managingSliderClassName}>
