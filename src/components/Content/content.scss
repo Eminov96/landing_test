@@ -358,6 +358,29 @@
     padding: 5px;
   }
 }
+
+.content-portfolio .content-portfolio-btn{
+    margin:0 5px 5px 0;
+    font-family: 'Chivo-Regular', sans-serif;
+  &:last-child{
+      margin-right: 0;
+  }
+  &.active{
+    background: #8E8E8E;
+    color: white;
+  }
+}
+.active .counter-portfolioBtn{
+  background: #8E8E8E;
+  color: white;
+}
+.counter-portfolioBtn{
+  font-size: .9em;
+  margin-left: 5px;
+  font-family: 'Chivo-light', sans-serif;
+  color: gray;
+}
+
 .content-portfolio{
   width: 100%;
   //margin: 0 161px;
@@ -380,6 +403,11 @@
   }
   .video-react .video-react-poster {
     background-size: cover;
+  }
+
+  &-wrapperBtn{
+    text-align: center;
+    margin-top: 20px;
   }
 
   &-instagram{
@@ -683,4 +711,8 @@
       }
     }
   }
+}
+
+.content{
+  scroll-behavior: smooth;
 }

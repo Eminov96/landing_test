@@ -1,4 +1,4 @@
-import {SET_CURRENT_HEADER_TAB, SET_CURRENT_SLIDE, SET_CONTENT_SLIDE} from "../constants/constantsMainPage";
+import {SET_CURRENT_HEADER_TAB, SET_CURRENT_SLIDE, SET_CONTENT_SLIDE, SET_CURRENT_CONTENT_BTN} from "../constants/constantsMainPage";
 
 export const currentHeaderTab = (name) => ({
     type: SET_CURRENT_HEADER_TAB,
@@ -15,3 +15,7 @@ export const setContentSlide = (index) => ({
     payload: index,
 });
 
+export const currentContentPortfolioBtn = (name) => ({
+    type: SET_CURRENT_CONTENT_BTN,
+    payload: name,
+});

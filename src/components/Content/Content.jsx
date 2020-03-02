@@ -8,6 +8,8 @@ import Icon from "../CommonComponents/Icon";
 import {sendMessage} from "../../actions/actionsSendingData";
 import Input from "../CommonComponents/Input";
 import Video from "../CommonComponents/Video";
+import CarouselContent from "../CommonComponents/CarouselContent";
+import {currentContentPortfolioBtn} from "../../actions/actionsMainPage";
 
 import Poster from "../../images/portfolio/Rectangle 9.jpg";
 import Poster2 from "../../images/portfolio/Rectangle 10.jpg";
@@ -18,8 +20,6 @@ import Poster6 from "../../images/portfolio/Rectangle 14.jpg";
 import Inst from "../../images/portfolio/Instagram.jpg";
 import InstLabel from "../../images/portfolio/Mask Group.png";
 
-import CarouselContent from "../CommonComponents/CarouselContent";
-
 import Location from "../../images/contactUs/Location.svg";
 import Mail from "../../images/contactUs/mail.svg";
 import Mask from "../../images/contactUs/Mask.svg";
@@ -27,7 +27,7 @@ import ContactUsImage from "../../images/contactUs/Rectangle 35.jpg";
 
 import "./content.scss";
 
-function Content({aboutImage, offer, offerImage, sendMessage}) {
+function Content({aboutImage, offer, offerImage, sendMessage, currentContentPortfolioBtn, currentBtn}) {
     const [dataFields, setDataFields] = useState({});
   //  const [rows, setRows] = useState('');
 
@@ -43,9 +43,15 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
         sendMessage(dataFields);
     };
 
+    const handlePortfolioClick = (event) => {
+       const text = event.currentTarget.getElementsByTagName('span')[0].innerText;
+       const textBtn = text.substr(0, text.indexOf('(')).trim();
+       currentContentPortfolioBtn(textBtn.toLowerCase());
+    };
+
     return(
         <div className="content">
-            <div className={'content-about'}>
+            <div id={'About'} className={'content-about'}>
                 <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-about-image'} imgSrc={aboutImage}/>
                 <div className={'aboutInfoMessage'}>
                     {/*Link*/}
@@ -61,7 +67,7 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
                     <Btn text={'Check our blog'} variant={'outlined'} btnClassName={'content-about-btn'}/>
                 </div>
             </div>
-            <div className={'content-offer'}>
+            <div id={'What we offer?'} className={'content-offer'}>
                 <div className={'content-offer-info'}>
                     <Title titleClassName={'content-offer-title'} text={'What we offer'}/>
                     {offer && offer.map((info)=>
@@ -77,15 +83,17 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
                     )}
                 </div>
                 <Image wrapperImageClassName={'content-wrapper-image'} imageClassName={'content-offer-image'} imgSrc={offerImage}/>
-                <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Contact us'}/>
+                <Btn link={'#contact_us'} variant={'contained'} btnClassName={'content-offer-btn'} text={'Contact us'}/>
             </div>
-            <div className={'content-portfolio'}>
+            <div id={'Portfolio'} className={'content-portfolio'}>
                 <Title titleClassName={'content-portfolio-title'} text={'portfolio'}/>
-                {/*<div>*/}
-                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'All'}/>*/}
-                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Video'}/>*/}
-                {/*    <Btn variant={'contained'} btnClassName={'content-offer-btn'} text={'Photo'}/>*/}
-                {/*</div>*/}
+                <div className={'content-portfolio-wrapperBtn'}>
+                    {['all', 'video', 'photo'].map((value)=>
+                        <Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${value === currentBtn && 'active'}`} text={value} portfolioCounter={'432'}/>
+                    )}
+                    {/*<Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${currentBtn}`} text={'Video'} portfolioCounter={'32'}/>*/}
+                    {/*<Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${currentBtn}`} text={'Photo'} portfolioCounter={'400'}/>*/}
+                </div>
                 <div className={'content-portfolio-posters'}>
                     <div className={'content-portfolio-wrapperPoster'}>
                         <Video poster={Poster}/>
@@ -109,12 +117,12 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
                     </div>
                 </div>
             </div>
-            <div className={'content-testimonials'}>
+            <div id={'Testimonials'} className={'content-testimonials'}>
                 <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
                 <CarouselContent rows={window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2}/>
             </div>
 
-            <div className={'content-feedBack'}>
+            <div id={'contact_us'}  className={'content-feedBack'}>
                 <div className={'content-feedBack-form'}>
                     <Title titleClassName={'content-feedBack-form-title'} text={'SEND US MESSAGE'}/>
                     <Input inputClassName={'content-feedBack-form-input'} fieldName={'Your Name'} getDataField={getDataField} inputType={'text'} fieldType={'name'} title={'Full Name'}/>
@@ -157,11 +165,13 @@ function Content({aboutImage, offer, offerImage, sendMessage}) {
 const mapStateToProps = (store) => ({
     aboutImage:store.mainPage.aboutImage,
     offer:store.mainPage.offer,
-    offerImage:store.mainPage.offerImage
+    offerImage:store.mainPage.offerImage,
+    currentBtn: store.mainPage.currentBtn,
 });
 
 const mapDispatchToProps = {
-    sendMessage
+    sendMessage,
+    currentContentPortfolioBtn
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Content);

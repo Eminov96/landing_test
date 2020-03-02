@@ -4,7 +4,7 @@ import {
     SET_CURRENT_SLIDE,
     SET_ABOUT_IMAGE,
     SET_OFFER_IMAGE,
-    SET_CONTENT_SLIDE
+    SET_CONTENT_SLIDE, SET_CURRENT_CONTENT_BTN
 } from "../constants/constantsMainPage";
 
 import HeaderImage from '../images/Header Image.jpg';
@@ -22,8 +22,10 @@ import Testimonials from '../images/testimonials/Mask Group.png'
 import Testimonials2 from '../images/testimonials/Mask Group2.png'
 import Testimonials3 from '../images/testimonials/Mask Group3.png'
 import Testimonials4 from '../images/testimonials/Mask Group3.png'
+import {currentContentPortfolioBtn} from "../actions/actionsMainPage";
 
 const initialState = {
+    currentBtn: 'all',
     currentTab: 'Home',
     currentSlide: 0,
     currentContentSlide: 0,
@@ -43,9 +45,7 @@ const initialState = {
     ],
     offerImage: OfferImage,
 
-
     carouselContentImages: [Testimonials, Testimonials2, Testimonials3, Testimonials4],
-
 
 };
 export const reducerMainPage = (state = initialState, action) => {
@@ -60,6 +60,8 @@ export const reducerMainPage = (state = initialState, action) => {
             return {...state, offerImage: action.payload};
         case SET_CONTENT_SLIDE:
             return {...state, currentContentSlide: action.payload};
+        case SET_CURRENT_CONTENT_BTN:
+            return {...state, currentBtn: action.payload};
         default:
             return state
     }

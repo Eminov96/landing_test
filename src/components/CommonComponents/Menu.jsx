@@ -12,7 +12,9 @@ function Menu({list, listClass, tabClass, currentHeaderTab, currentTab}) {
     return (
         <ul className={listClass}>
             {list.map((value, index)=>
-                <li onClick={handleChange} className={`${tabClass} ${currentTab === value && 'current-tab'}`} key={index}>{value}</li>)
+                <li onClick={handleChange} className={`${tabClass} ${currentTab === value && 'current-tab'}`} key={index}>
+                    <a href={`#${value}`}>{value}</a>
+                </li>)
             }
         </ul>
     );
