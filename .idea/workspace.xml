@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Btn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Btn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/MobileNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/MobileNavbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,25 +137,50 @@
       <workItem from="1583147939100" duration="1384000" />
       <workItem from="1583149795538" duration="1921000" />
       <workItem from="1583151802215" duration="1457000" />
-      <workItem from="1583153625495" duration="1123000" />
+      <workItem from="1583153625495" duration="1863000" />
+      <workItem from="1583156246572" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed adaptive version" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1720" height="777" key="DiffContextDialog" timestamp="1583149445762">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="100" y="123" width="1720" height="777" key="DiffContextDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1583149445762" />
-    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1583153638469">
+    <state x="766" y="424" key="GitRewordDialog" timestamp="1583155341274">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="766" y="424" key="GitRewordDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1583155341274" />
+    <state x="100" y="123" width="1720" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583157687166">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="100" y="123" width="1720" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1583157687166" />
+    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog" timestamp="1583156253771">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="639" y="372" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582906279076" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1000@0.0.1920.1000" timestamp="1582800417617" />
     <state x="639" y="373" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.0.1920.1080@0.0.1920.1080" timestamp="1582618368326" />
-    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1583153638469" />
+    <state x="0" y="23" width="1920" height="977" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1583156253771" />
     <state x="0" y="23" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.978@0.23.1920.978" timestamp="1582637573989" />
     <state x="470" y="248" width="645" height="472" key="find.popup" timestamp="1583106255454">
       <screen x="0" y="0" width="1440" height="900" />
