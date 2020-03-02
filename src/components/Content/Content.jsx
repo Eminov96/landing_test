@@ -24,6 +24,7 @@ import Location from "../../images/contactUs/Location.svg";
 import Mail from "../../images/contactUs/mail.svg";
 import Mask from "../../images/contactUs/Mask.svg";
 import ContactUsImage from "../../images/contactUs/Rectangle 35.jpg";
+import Subscribe from "../../images/contactUs/Rectangle 36.jpg";
 
 import "./content.scss";
 
@@ -157,6 +158,17 @@ function Content({aboutImage, offer, offerImage, sendMessage, currentContentPort
                     </div>
                 </div>
                 <Image imgSrc={ContactUsImage} wrapperImageClassName={'content-feedBack-contactUsImage'} imageClassName={'image'}/>
+            </div>
+            <div className={'content-subscribe'}>
+                <div className={'content-subscribe-wrapper'}>
+                    <Title text={'Subscribe for updates'} titleClassName={'content-subscribe-title'}/>
+                    <div className={'content-subscribe-form'}>
+                        <Input fieldType={'subscribe'} inputType={'email'} inputClassName={'content-subscribe-input'} fieldName={'Your Email'}/>
+                        <Btn text={'subscribe'} variant={'contained'} btnClassName={'content-subscribe-btn'}/>
+                    </div>
+                    <Description text={'We value your privacy. None of the details supplied will be shared with external parties'} descriptionClassName={'content-subscribe-description'}/>
+                </div>
+                <Image imgSrc={Subscribe} imageClassName={'content-subscribe-image'} wrapperImageClassName={'content-subscribe-wrapperImage'}/>
             </div>
         </div>
     );

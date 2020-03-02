@@ -2,7 +2,10 @@
   @media (max-width: 1200px) {
     width: 47%;
   }
-  @media (max-width: 768px) {
+  //@media (max-width: 1024px) {
+  //  width: 100%;
+  //}
+  @media (max-width: 1024px) { //768
     width: 100%;
   }
 }
@@ -10,7 +13,7 @@
   @media (max-width: 1200px) {
     width: 65%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) { //768
     width: 100%;
   }
 }
@@ -26,7 +29,7 @@
   }
   .content-offer-image{
     height: 977px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) { //768
       width: 100%;
       height: auto;
     }
@@ -58,7 +61,7 @@
     margin-right: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) { //768
     width: 100%;
     box-sizing: border-box;
     padding: 40px 80px;
@@ -80,7 +83,7 @@
   @media (max-width: 1200px) {
     display: flex;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) { // 768
     flex-direction: column-reverse;
   }
   &-link-title {
@@ -147,26 +150,25 @@
     font-size: 1em;
     height: initial;
   }
+  @media (max-width: 1024px) {
+    width: 20%;
+    font-size: 1.1em;
+    left: 40%;
+  }
   @media (max-width: 768px) {
     width: 25%;
-    height: 4%;
+    height: auto;
     left: 35%;
-    top: 47%;
+    top: auto;
+  }
+  @media (max-width: 530px) {
+    width: 35%;
   }
   @media (max-width: 425px) {
-    top: 70%;
-    width: 30%;
-  }
-  @media (max-width: 375px) {
-    top: 70%;
-    left: 30%;
     width: 40%;
+    left: 30%;
   }
 
-  @media (max-width: 320px) {
-    top: 78%;
-
-  }
 
   &:hover{
     color: black;
@@ -179,7 +181,7 @@
   @media (max-width: 1200px) {
     position: relative;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) { //  768px
     flex-direction: column;
   }
   &-info{
@@ -201,7 +203,7 @@
       padding: 40px 0 0;
       box-sizing: border-box;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) { //  768px
       width: 100%;
       padding: 40px 0 60px;
       display: grid;
@@ -226,7 +228,7 @@
       padding-bottom: 30px;
       font-size: 2em;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) { //  768px
       padding-bottom: 0;
     }
   }
@@ -287,7 +289,10 @@
         top: 67%;
         left: 7%;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
+
+      }
+      @media (max-width: 768px) { //  768px
         width: 100%;
         position: initial;
         padding: 20px 15px 0;
@@ -527,7 +532,7 @@
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 550px) { //425
     flex-direction: column;
   }
 }
@@ -557,11 +562,13 @@
     padding: 20px 30px;
     margin-bottom: 0;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 640px) {
+    top: -2%;
+  }
+  @media (max-width: 550px) { //425
     position: initial;
     width: 100%;
     box-sizing: border-box;
-
   }
   .title{
     font-family: 'Chivo-Regular', sans-serif;
@@ -570,6 +577,10 @@
     letter-spacing: 0.04em;
     opacity: 0.8;
     margin-bottom: 10px;
+    @media (max-width: 700px) {
+      line-height: 15px;
+      font-size: 14px;
+    }
   }
   .content-feedBack-form-input{
     width: 100%;
@@ -590,6 +601,9 @@
     &:hover{
       color: black;
     }
+    @media (max-width: 700px) {
+      padding: 10px 0;
+    }
   }
 }
 
@@ -601,6 +615,10 @@
   margin-bottom: 40px;
   @media (max-width: 768px) {
     margin-bottom: 20px;
+  }
+  @media (max-width: 700px) {
+    font-size: 16px;
+    line-height: 10px;
   }
 }
 
@@ -622,7 +640,7 @@
       margin: 0;
       box-sizing: border-box;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 550px) {// 425
       padding: 40px 30px;
     }
 
@@ -632,7 +650,7 @@
     @media (max-width: 1200px) {
       width: 60%;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 550px) { //425
       display: none;
     }
     .image{
@@ -713,6 +731,124 @@
   }
 }
 
-.content{
-  scroll-behavior: smooth;
+.content-subscribe .content-subscribe-btn{
+  box-shadow: 5px 10px 20px rgba(16, 112, 177, 0.2);
+  font-family: 'Chivo-Bold', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background: #13AA57;
+  padding: 13px 32px 17px 32px;
+  border-radius: initial;
+  &:hover{
+    color: black;
+  }
+  @media (max-width: 1440px) {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    padding: 6px 16px;
+  }
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+}
+
+.content-subscribe{
+  position: relative;
+  margin-top: 113px;
+  &-wrapper{
+    position: absolute;
+    bottom: 30%;
+    left: 33%;
+    background-color: white;
+    padding: 26px 98px;
+    width: 29%;
+    @media (max-width: 1440px) {
+      padding: 15px 50px;
+      width: 40%;
+      bottom: 22%;
+      left: 30%;
+    }
+    @media (max-width: 1200px) {
+      bottom: 15%;
+      left: 25%;
+      width: 45%;
+
+    }
+    @media (max-width: 1000px) {
+      width: 70%;
+      left: 15%;
+      padding: 15px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      left: 0;
+      bottom: 40%;
+      padding: 0;
+    }
+  }
+
+  &-title{
+    font-family: 'Chivo-Bold', sans-serif;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 20px;
+    @media (max-width: 1440px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    @media (max-width: 1000px) {
+      line-height: 15px;
+    }
+  }
+  &-form{
+    display: flex;
+    @media (max-width: 1000px) {
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      margin: auto 10px;
+    }
+  }
+  &-input{
+    width: 67.5%;
+    margin-right: 10px !important;
+    @media (max-width: 1200px) {
+      input{
+        //padding: 16px 12px;
+      }
+    }
+    div{
+      border-radius: 0;
+    }
+  }
+  &-description{
+    font-family: 'Chivo-light', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    //letter-spacing: -0.3px;
+    color: #BDBDBD;
+    text-align: center;
+    margin-top: 12px;
+    @media (max-width: 1000px) {
+      line-height: 15px;
+    }
+    @media (max-width: 768px) {
+      margin: 10px 0 15px;
+      font-size: 12px;
+    }
+  }
+  &-wrapperImage{
+    display: flex;
+    @media (max-width: 1000px) {
+
+    }
+  }
+  &-image{
+    width: 100%;
+  }
 }

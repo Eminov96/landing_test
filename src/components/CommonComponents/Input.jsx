@@ -20,7 +20,7 @@ function Input({inputType, inputClassName, fieldName, fieldType, getDataField, t
     };
     return (
         <>
-            <p className={'title'}>{title}</p>
+            {title && <p className={'title'}>{title}</p>}
             {inputType === 'textarea' ? (
             <TextField className={inputClassName} multiline rows="4"
                        onChange={handleChange}
