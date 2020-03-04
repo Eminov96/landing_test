@@ -3,18 +3,19 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
 import "./hamburgers.scss";
+import Button from "@material-ui/core/Button";
 
 function MobileNavbar({list, listClass, tabClass}) {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const [open, setOpen] = React.useState(null);
+    // const [open, setOpen] = React.useState(null);
 
     const handleClick = event => {
-        if (open){
-            setOpen(null);
-            setAnchorEl(null);
-        }
-        setOpen(true);
+        // if (open){
+        //     setOpen(null);
+        //     setAnchorEl(null);
+        // }
+        // setOpen(true);
         setAnchorEl(event.currentTarget);
     };
 
@@ -32,19 +33,23 @@ function MobileNavbar({list, listClass, tabClass}) {
                     <span></span>
                 </div>
             </nav>
-            {open &&  <Menu
+            <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
                 keepMounted
                 open={Boolean(anchorEl)}
-                onClose={handleClick}
+                onClose={handleClose}
             >
                 {list.map((value, index)=>
-                    <MenuItem className={tabClass} key={index}>{value}</MenuItem>
+                    <a href={`#${value}`}>
+                        <MenuItem onClick={handleClose} key={index}>{value}</MenuItem>
+                    </a>
                 )}
-            </Menu>}
+            </Menu>
         </div>
     );
 }
 
 export default MobileNavbar;
+
+
