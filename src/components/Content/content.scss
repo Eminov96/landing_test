@@ -170,6 +170,7 @@
     height: auto;
     left: 35%;
     top: auto;
+    padding: 5px;
   }
   @media (max-width: 530px) {
     width: 35%;
@@ -521,6 +522,12 @@
   padding: 0 40px 32px;
   width: 75%;
   box-sizing: border-box;
+
+  @media (max-width: 1400px) {
+    padding: 0 15px 32px;
+    top: 15%;
+  }
+
   @media (max-width: 1024px) {
     padding: 0 20px 10px;
     width: 75%;
@@ -529,7 +536,11 @@
     top: 30%;
   }
 &-image{
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
+    width: 50%;
+  }
+
+  @media (max-width: 1024px) {
     width: 100%;
   }
 }
