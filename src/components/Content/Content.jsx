@@ -120,10 +120,12 @@ function Content({aboutImage, offer, offerImage, sendMessage, currentContentPort
                         <Image imgSrc={Inst} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
                     </div>
                 </div>
+                <Btn text={'Show more'} btnClassName={'content-portfolio-btn-showMore'} variant={'outlined'}/>
+
             </div>
             <div id={'Testimonials'} className={'content-testimonials'}>
                 <Title titleClassName={'content-testimonials-title'} text={'testimonials'}/>
-                <CarouselContent rows={window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2}/>
+                <CarouselContent/>
             </div>
 
             <div id={'contact_us'}  className={'content-feedBack'}>

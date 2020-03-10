@@ -14,7 +14,7 @@
   &-next {
     width: 33px;
     height: 33px;
-    left: 100px;
+    left: 90px;
     top: 94.5%;
     @media (max-width: 1500px) {
       top: 92%;
@@ -43,7 +43,7 @@
     width: 33px;
     height: 33px;
     top: 94.5%;
-    padding-left: 26px;
+    padding-left: 34px;
     @media (max-width: 1500px) {
       top: 92%;
     }
@@ -91,7 +91,7 @@
     &-next {
       width: 33px;
       height: 33px;
-      left: 52%;
+      left: 51.2%;
       top: 100%;
       @media (max-width: 1300px) {
         left: 53%;
@@ -117,7 +117,7 @@
       width: 33px;
       height: 33px;
       top: 100%;
-      left: 46%;
+      left: 47%;
       @media (max-width: 1500px) {
         left: 45.5%;
       }
@@ -183,19 +183,19 @@
   margin-bottom: 20px;
 }
 .couple-names{
-  font-family: 'Chivo-Regular', sans-serif;
+  font-family: 'Chivo-Regular';
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 .couple-date{
-  font-family: 'Chivo-light', sans-serif;
+  font-family: 'Chivo-light';
   font-size: 14px;
   line-height: 17px;
   color: #8E8E8E;
 }
 .couple-text{
-  font-family: 'Chivo-light', sans-serif;
+  font-family: 'Chivo-light';
   font-size: 18px;
   line-height: 29px;
   color: #263238;
@@ -203,9 +203,9 @@
   text-align: justify;
 }
 .carousel-testimonials-managing{
-  font-family: 'Chivo-Regular', sans-serif;
-  font-size: 18.3566px;
   line-height: 26px;
   text-align: center;
   margin-top: 3px;
+  font-family: 'Chivo-Light';
+  font-size: 15px;
 }

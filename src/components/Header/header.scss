@@ -4,7 +4,8 @@
     display: block;
   }
   .header-information{
-    width: 54%;
+    //width: 54%;
+    width: 52.5%;
     padding-top: 22px;
     @media (max-width: 1024px) {
       width: 60%;
@@ -34,8 +35,8 @@
     }
   }
   .header-managingSlide{
-    width: 200px;
-    height: 66px;
+    width: 204px;
+    height: 68px;
     background-color: #13AA57;
     color: white;
     position: absolute;
@@ -46,9 +47,9 @@
       width: 155px;
     }
     span{
-      font-family: 'Chivo-Regular', sans-serif;
-      font-size: 19px;
-      line-height: 60px;
+      font-family: 'Chivo-Light';
+      font-size: 15px;
+      line-height: 65px;
       margin-left: 28%;
 
       @media (max-width: 900px) {
@@ -113,7 +114,7 @@
     justify-content: space-between;
     min-width: 570px;
     margin-right: 73px;
-    font-family: 'Chivo-Regular', sans-serif;
+    font-family: 'Chivo-Regular';
 
     @media (max-width: 1919px) {
       width: 75%;
@@ -187,7 +188,7 @@
   }
 
   &-title{
-    font-family: 'Chivo-Regular', sans-serif;
+    font-family: 'Chivo-Bold';
     font-size: 46px;
     line-height: 64px;
     margin-bottom: 26px;
@@ -216,7 +217,7 @@
     }
   }
   &-description{
-    font-family: 'Chivo-Regular', sans-serif;
+    font-family: 'Chivo-Regular';
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 58px;
@@ -250,7 +251,7 @@
     color: white;
     border-radius: inherit;
     text-transform: none;
-    font-family: 'Chivo-Regular', sans-serif;
+    font-family: 'Chivo-Regular';
     font-size: 30px;
     line-height: 53px;
     margin-right: 38px;
@@ -295,5 +296,19 @@
     display: block;
     width: 80%;
     margin: 0 auto;
+  }
+}
+.header-slider{
+  .carousel-item.active{
+    opacity: 1 !important;
+    transition: 1s !important;
+
+    transform: initial !important;
+  }
+  .carousel-item{
+    opacity: 0 !important;
+    transition: 1s !important;
+
+    transform: initial !important;
   }
 }

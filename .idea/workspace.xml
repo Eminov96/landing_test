@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/CarouselContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/CarouselContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/MainPage.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +151,7 @@
       <workItem from="1583156246572" duration="1741000" />
       <workItem from="1583329825415" duration="3220000" />
       <workItem from="1583339435401" duration="4310000" />
+      <workItem from="1583844943148" duration="8016000" />
     </task>
     <servers />
   </component>

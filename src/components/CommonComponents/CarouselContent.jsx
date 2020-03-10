@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {connect} from "react-redux";
 import {currentHeaderTab, setSlide, setContentSlide} from "../../actions/actionsMainPage";
 import Slider from 'infinite-react-carousel';
@@ -10,13 +10,17 @@ import Couple2 from '../../images/testimonials/Ellipse 8.png'
 
 function CarouselContent({rows, sliderClassName, managingSliderClassName, setContentSlide, carouselImages, currentContentSlide}) {
 
+    const [currentRows, setCurrentRows] = useState(window.innerWidth <= 425 ? 1 : window.innerWidth > 768 ? 3 : 2);
+
     const changeCurrentSlide = (index) => {
         setContentSlide(index);
     };
-
+    const handledOnResize= ({target}) => {
+        setCurrentRows(target.screen.availWidth <= 425 ? 1 : target.screen.availWidth > 768 ? 3 : 2);
+    };
     return (
         <div className={'carousel-testimonials'} >
-            <Slider rows={rows} duration={150} className={'carouselContent'} afterChange={changeCurrentSlide} >
+            <Slider onResize={handledOnResize} rows={currentRows} duration={150} className={'carouselContent'} afterChange={changeCurrentSlide} >
                 {carouselImages && carouselImages.map((image, index)=>
                     <div>
                         <img className={'carouselImageContent'} key={index} src={image} alt=""/>
@@ -37,7 +41,7 @@ function CarouselContent({rows, sliderClassName, managingSliderClassName, setCon
                 )}
             </Slider>
             <div className={'carousel-testimonials-managing'}> {/* managingSliderClassName */}
-                <span>{currentContentSlide+1}/{Math.ceil(carouselImages.length/rows)}</span>
+                <span>{currentContentSlide+1}/{Math.ceil(carouselImages.length/currentRows)}</span>
             </div>
         </div>
     );

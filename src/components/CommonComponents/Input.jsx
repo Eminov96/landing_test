@@ -22,7 +22,7 @@ function Input({inputType, inputClassName, fieldName, fieldType, getDataField, t
         <>
             {title && <p className={'title'}>{title}</p>}
             {inputType === 'textarea' ? (
-            <TextField className={inputClassName} multiline rows="4"
+            <TextField className={inputClassName} multiline rows="6"
                        onChange={handleChange}
                        type={inputType} label={fieldName}
                        variant={'outlined' }/>
