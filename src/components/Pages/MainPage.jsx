@@ -9,7 +9,7 @@ function MainPage() {
         <div className={'container'}>
             <Header/>
             <Content/>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
