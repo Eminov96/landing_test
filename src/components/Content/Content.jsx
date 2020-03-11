@@ -80,7 +80,7 @@ function Content({aboutImage, offer, offerImage, sendMessage, currentContentPort
                                     {info['key'] && <span className={'second'}></span>}
                                     <Title text={info['title']} titleClassName={`content-offer-infoBlock-title ${info['key'] && 'last'}`}/>
                                 </div>
-                                <Description text={info['description']} descriptionClassName={`content-offer-infoBlock-description ${info['key'] && 'last'}`}/>
+                                <Description infoYouTube = {info} text={info['description']} descriptionClassName={`content-offer-infoBlock-description ${info['key'] && 'last'}`}/>
                             </div>
                         )}
                     </div>

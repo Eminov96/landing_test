@@ -390,6 +390,24 @@
       @media (max-width: 1200px) {
         padding: 0 0 10px 10px;
       }
+
+      &-youtube{
+        font-family: 'Chivo-Bold';
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration-line: underline;
+        color: #13AA57;
+      }
+    }
+    &-innerIcon{
+      display: flex;
+      margin-right: 10px;
+    }
+
+    &-youtubeWrapper{
+      display: flex;
+      align-items: center;
+      margin-top: 7px;
     }
   }
 }
