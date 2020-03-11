@@ -200,10 +200,8 @@
   &-info{
     display: grid;
     //grid-gap: 28px;
-
-    grid-row-gap: 34px;
-    row-gap: 34px;
-    grid-column-gap: 14px;
+    row-gap: 45.5px;
+    grid-column-gap: 0;
     //column-gap: 0px;
     grid-template-columns: 47% 47%;
     width: 45.5%;
@@ -253,10 +251,14 @@
       padding-bottom: 0;
     }
   }
+  &-wrapper-title.last{
+    margin-top: 5px;
+  }
   &-wrapper-title{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 8px;
+    margin-bottom: 18px;
     span{
       @media (max-width: 1800px) {
         display: none;
@@ -264,14 +266,14 @@
       border-left: 3px solid;
       position: absolute;
       &.first{
-        height: 80px;
-        top: 25px;
-        left: 57px;
+        height: 65px;
+        top: 19px;
+        left: 69px;
       }
       &.second{
-        height: 70px;
-        top: 160px;
-        left: 57px;
+        height: 65px;
+        top: 148px;
+        left: 69px;
       }
     }
   }
@@ -282,7 +284,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #263238;
-    padding-left: 45px;
+    padding-left: 52px;
     @media (max-width: 1680px) {
      font-size: 1em;
     }
@@ -338,6 +340,13 @@
     }
 
     &-icon.last{
+      width: 43px;
+      height: 43px;
+      z-index: 2;
+      position: absolute;
+      top: 39%;
+      left: 5.5%;
+
       @media (max-width: 1800px) {
         display: none;
       }
@@ -347,10 +356,6 @@
       img{
         width: 100%;
       }
-      z-index: 2;
-      position: absolute;
-      top: 45%;
-      left: 4.5%;
     }
     &-description.last{
       @media (max-width: 1800px) {
@@ -365,12 +370,15 @@
       @media (max-width: 1024px) {
         margin-bottom: 25px;
       }
-      margin-left: 10px;
-      margin-bottom: 25px;
+
+      margin-left: 35px;
+      margin-bottom: 38px;
       border-left: 0;
+      font-size: 18px;
+      margin-top: 5px;
     }
     &-title.last{
-      padding-left: 48px;
+      padding-left: 70px;
     }
     &-icon{
       width: 35px;
@@ -381,12 +389,27 @@
       font-weight: bold;
       padding-left: 16px;
     }
+    &:nth-child(3){
+      .content-offer-infoBlock-description{
+       // margin-left: 6px;
+      }
+    }
+    &:nth-child(5){
+      .content-offer-infoBlock-description{
+      //  margin-left: 6px;
+      }
+    }
     &-description{
+      font-size: 16px;
       font-family: 'Chivo-light';
       font-weight: lighter;
-      padding: 20px 0 0 36px;
+      padding: 8px 0 0 36px;
       border-left: 3px solid #263238;
       margin-left:15px;
+
+
+      //margin-left: 6px;
+
       @media (max-width: 1200px) {
         padding: 0 0 10px 10px;
       }
