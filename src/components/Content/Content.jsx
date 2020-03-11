@@ -95,22 +95,54 @@ function Content({aboutImage, offer, offerImage, sendMessage, currentContentPort
                     {['all', 'video', 'photo'].map((value)=>
                         <Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${value === currentBtn && 'active'}`} text={value} portfolioCounter={'432'}/>
                     )}
-                    {/*<Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${currentBtn}`} text={'Video'} portfolioCounter={'32'}/>*/}
-                    {/*<Btn handleClick={handlePortfolioClick} variant={'outlined'} btnClassName={`content-portfolio-btn ${currentBtn}`} text={'Photo'} portfolioCounter={'400'}/>*/}
                 </div>
                 <div className={'content-portfolio-posters'}>
-                    <div className={'content-portfolio-wrapperPoster'}>
-                        <Video poster={Poster}/>
-                        <Image imgSrc={Poster2} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
-                    </div>
-                    <div className={'content-portfolio-wrapperPoster'}>
-                       <Image imgSrc={Poster3} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
-                       <Image imgSrc={Poster4} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
-                    </div>
-                    <div className={'content-portfolio-wrapperPoster'}>
-                        <Video poster={Poster5}/>
-                        <Image imgSrc={Poster6} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
-                    </div>
+                    {currentBtn === 'video' ? (
+                        <>
+                            <div className={'content-portfolio-wrapperPoster-video'}>
+                                <Video poster={Poster}/>
+                                <Video poster={Poster5}/>
+                            </div>
+                            <div className={'content-portfolio-wrapperPoster-video'}>
+                                <Video poster={Poster5}/>
+                                <Video poster={Poster}/>
+                            </div>
+                        </>
+                        ):(
+                            currentBtn === 'photo' ? (
+                                <>
+                                    <div className={'content-portfolio-wrapperPoster-photo'}>
+                                        <Image imgSrc={Poster2} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                    </div>
+                                    <div className={'content-portfolio-wrapperPoster-photo'}>
+                                        <Image imgSrc={Poster3} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                    </div>
+                                    <div className={'content-portfolio-wrapperPoster-photo'}>
+                                        <Image imgSrc={Poster6} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                    </div>
+                                    {/*<div>*/}
+                                    {/*    <Image imgSrc={Poster4} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>*/}
+                                    {/*    <Image imgSrc={Poster6} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>*/}
+                                    {/*</div>*/}
+                                </>
+                            ):(
+                               <>
+                                   <div className={'content-portfolio-wrapperPoster'}>
+                                       <Video poster={Poster}/>
+                                       <Image imgSrc={Poster2} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                   </div>
+                                   <div className={'content-portfolio-wrapperPoster'}>
+                                       <Image imgSrc={Poster3} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                       <Image imgSrc={Poster4} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                   </div>
+                                   <div className={'content-portfolio-wrapperPoster'}>
+                                       <Video poster={Poster5}/>
+                                       <Image imgSrc={Poster6} wrapperImageClassName={'poster'} imageClassName={'posterImage'}/>
+                                   </div>
+                               </>
+                            )
+                        )
+                    }
                     <div className={'content-portfolio-wrapperPoster'}>
                         <div className={'content-portfolio-instagram'}>
                             <Image imgSrc={InstLabel} imageClassName={'content-portfolio-instagram-image'} wrapperImageClassName={'content-portfolio-instagram-wrapImage'}/>
