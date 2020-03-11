@@ -31,14 +31,14 @@ function Carousel({sliderClassName, managingSliderClassName, setSlide, carouselI
             <div className={managingSliderClassName}>
                 <span>{currentSlide+1}/{carouselImages.length}</span>
 
-                {/*<FullScreen ref={ref => {elFullScreenRef = ref }}>*/}
-                {/*    <div*/}
-                {/*        className='el-rq'*/}
-                {/*        onClick={requestOrExitFullScreenByElement}*/}
-                {/*    >*/}
-                {/*        {!isFullScreen ? 'Request FullScreen by Element' : 'Exit FullScreen by Element'}*/}
-                {/*    </div>*/}
-                {/*</FullScreen>*/}
+                <FullScreen ref={ref => {elFullScreenRef = ref }}>
+                <div
+                    className='el-rq'
+                    onClick={requestOrExitFullScreenByElement}
+                >
+                    {!isFullScreen ? '+' : '-'}
+                </div>
+            </FullScreen>
 
             </div>
         </div>
