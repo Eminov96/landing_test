@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8738a524-9678-4efa-943b-bcd2029cb8f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/Carousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommonComponents/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

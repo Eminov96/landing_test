@@ -219,3 +219,48 @@
   font-family: 'Chivo-Light';
   font-size: 15px;
 }
+
+.full-screen{
+  line-height: 86px;
+  margin-left: 67px;
+  @media (max-width: 1780px) {
+    line-height: 95px;
+  }
+  @media (max-width: 1000px) {
+    line-height: 90px;
+  }
+  @media (max-width: 768px) {
+    line-height: 100px;
+  }
+}
+
+.carousel-modal{
+  .carousel-prev{
+    top: 50%;
+    left: 0;
+  }
+  .carousel-next{
+    top: 50%;
+    left: 91%;
+  }
+}
+
+.managing-slider-modal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 5px 0;
+  .full-screen-modal{
+    margin-right: 20px;
+    img{
+      width: 80%;
+    }
+  }
+  .counter-modal{
+    font-family: 'Chivo-Light';
+    font-size: 15px;
+    color: white;
+    margin-left: 20px;
+  }
+}
